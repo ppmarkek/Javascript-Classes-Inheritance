@@ -62,7 +62,6 @@ class StringBuilder{
         this.str = [this.str];
         for(let i=1; i<=n-1; i++){
             this.str.push(this.str[0]);
-            console.log(this.str)
         }
         this.str = this.str.join("");
         console.log(this.str);
@@ -74,7 +73,6 @@ class StringBuilder{
         this.str = [...this.str];
         for(let i=1; i<=strlen-n; i++){
             this.str.pop();
-            console.log(this.str);
         }
         this.str = this.str.join("");
         console.log(this.str);
