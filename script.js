@@ -33,11 +33,10 @@ class IntBuilder{
         return this;
     }
     get(){
-        return this.num ;
+        console.log(this.num);
+        return this;
     }
 }
-
-IntBuilder.random(10, 100); 
 
 class StringBuilder{
     constructor(str){
@@ -101,15 +100,7 @@ class StringBuilder{
         return this;
     }
     get(){
-        return this.str ;
+        console.log(this.str);
+        return this;
     }
 }
-
-let strBuilder = new StringBuilder('Hello'); // 'Hello';
-strBuilder
-  .plus(' all', '!')
-  .minus(4)
-  .multiply(3)
-  .divide(4)
-  .remove('l')
-  .sub(1,1);
